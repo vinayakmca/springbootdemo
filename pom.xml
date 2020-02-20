@@ -34,6 +34,12 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -68,7 +74,7 @@
 					<server>maven-tomcat-war-deployment-server</server>   
 					<username>develop</username>  
 					<password>test123</password>
-                     <path>/springbootdemo</path>					
+					<path>/springbootdemo</path>					
 				</configuration>   
 			</plugin>   
 		</plugins>
