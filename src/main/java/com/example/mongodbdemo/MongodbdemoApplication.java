@@ -15,7 +15,7 @@ public class MongodbdemoApplication extends SpringBootServletInitializer {
 	
 	 @Override
  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-  return application.sources(DeployableWarApplication.class);
+  return application.sources(MongodbdemoApplication.class);
  }
 
 
