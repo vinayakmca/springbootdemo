@@ -27,6 +27,8 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
+	
+	
 	@PostMapping("")
 	public ResponseEntity<UserDTO> addUser(@RequestBody UserDTO userDto){
 		
@@ -41,7 +43,7 @@ public class UserController {
 	
 	@GetMapping("/all")
 	public ResponseEntity<Page<User>> getAllUser(@RequestParam("pageNo") int pageNo){
-		
+		System.out.println("ok");
 		return new ResponseEntity<Page<User>>(userService.getAllUser(pageNo),HttpStatus.OK);
 	}
 	
